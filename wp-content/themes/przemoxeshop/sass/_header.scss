@@ -1,0 +1,144 @@
+.header-no-front-page{
+    height:84.5px;
+ 
+}
+
+header{
+    .main-navigation-not-transparent{
+        background: rgba(16, 16, 16, 0.95)!important;
+    }
+    .main-navigation-transparent{
+        background: transparent;
+    }
+    
+    .main-navigation{
+        position: fixed;
+        width:100%;
+        z-index: 201;
+        transition: .2s ease;
+        border-bottom: 1px solid;
+        border-color: rgba(16, 16, 16, 0.2);
+        .front-page-menu{
+            height:9vh;
+            .row{
+                div{
+                    .menu-menu-1-container{
+                        .menu{
+                            .menu-item-has-children{
+                                a::after{
+                                    font-size:9px;
+                                    margin-left:5px;
+                                    content: "\f229";
+                                    display: inline-block;
+                                    font-family: bootstrap-icons ;
+                                    font-style: normal;
+                                    font-weight: normal ;
+                                    font-variant: normal;
+                                    text-transform: none;
+                                    line-height: 1;
+                                    vertical-align: -0.125em;
+                                    -webkit-font-smoothing: antialiased;
+                                }
+                                ul{
+                                    background: black;
+                                    color:white;
+                                    a::after{
+                                        content: unset;
+                                    }
+                                }
+                            }
+                            li{
+                                padding-right:30px;
+                                font-size: 0.875rem;
+                                a{
+                                    color:$m-color2;
+                                    text-transform: uppercase;
+                                    &:hover{
+                                        color:$m-color2-hover;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .logo{
+                    h2{
+                        font-weight:300;
+                        letter-spacing: 2px;
+                        margin:0;
+    
+                    }
+                }
+                .container-login-search-basket{
+                    div{
+                        .color-effects{
+                            cursor: pointer;
+                            text-transform: uppercase;
+                            color:rgba(255, 255, 255, 0.5);
+                            &:hover{
+                                color: white;
+                            }
+                        }
+    
+                    }
+                    .basket-square{
+                        text-transform: uppercase;
+                        padding-top:5px;
+                        padding-bottom:5px;
+                        border: 1px solid rgba(255, 255, 255, 0.5);
+                        color:rgba(255, 255, 255, 0.5);
+                        &:hover{
+                            border: 1px solid white;
+                            color:white;
+                        }
+                        span{
+                            padding:10px;
+    
+                        }
+                        span:last-child{
+                            border-left: 1px solid rgba(255, 255, 255, 0.5);
+                            padding: 5px;
+                            padding-left:10px;
+                            padding-right:10px;
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+
+}
+
+////////Search show/////////
+
+.site{
+    position: relative;
+    .search-show {
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 9999;
+        position:fixed;
+        width:100%;
+        height:100vh;
+        display: none;
+        .row-search{
+            height:10vh;
+            i{
+                font-size:30px;
+                cursor: pointer;
+                color:black;
+            }
+        }
+    }
+    .search-hided{
+        display: none;
+    }
+    .search-showed{
+        display: block;
+    }
+}
+.aws-search-field{
+    font-size:20px!important;
+    border: 0!important;
+}
+

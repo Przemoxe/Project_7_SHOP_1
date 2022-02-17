@@ -1,0 +1,166 @@
+.container-fluid-slider{
+    main{
+        .carousel{
+            .carousel-inner{
+                .carousel-item{
+                    a{
+                        
+                        img{
+                            height:100vh;
+                            object-fit: cover;
+                            background-position:center;
+                            background-size:cover;
+                            -webkit-animation: zoomeffect 10s;
+                            -moz-animation: zoomeffect 10s;
+                            
+                        }
+                        @-webkit-keyframes zoomeffect{
+                            0%{
+                                background-position:center;
+                              transform:scale(1.2,1.2);
+                            }
+                            100%{
+                                background-position:center;
+                              transform:scale(1,1);
+                            }
+                        }
+                        @keyframes zoomeffect{
+                                0%{
+                                    background-position:center;
+                                transform:scale(1.2,1.2);
+                                }
+                                100%{
+                                    background-position:center;
+                                transform:scale(1,1);
+                                }
+                        }
+                    }
+                    .overlay{
+                        position: absolute; 
+                        bottom: 0; 
+                        top:0;
+                        left:0;
+                        right:0;
+                        background: rgb(0, 0, 0);
+                        background: rgba(0, 0, 0, 0.3); /* Black see-through */
+                        width: 100%;
+                        height:100%;
+                    }
+                    .carousel-caption {
+                        position: absolute;
+                        top: 33%;
+                        bottom: 33%;
+                        left: 0;
+                        right: 0;
+                        padding-top: 1.25rem;
+                        padding-bottom: 1.25rem;
+                        color: #fff;
+                        text-align: center;
+                        h1{
+                            font-size: 3.5rem;
+                            font-weight: 300 !important;
+                            color: #fff;
+                            b{
+                                font-weight: 600;
+                            }
+                        }
+                        .btn-slider{
+                            background-color: #fff;
+                            border-color: #fff;
+                            border-radius: 0;
+                            color: black!important;
+                            text-transform: uppercase;
+                            letter-spacing: .05rem;
+                            cursor: pointer;
+                            padding: 13px 19px;
+                            line-height: 1.5;
+                            text-decoration: none;
+                            font-weight: 400;
+                            font-size:12px;
+                            .bi-arrow-right{
+                                margin-left:-18px;
+                                transition: all .1s linear;
+                                opacity: 0;
+                                color:black!important;
+                                font-size:13px;
+                                line-height: 1.5;
+                            }
+                        }
+                        .btn-slider:hover{
+                            .bi-arrow-right{
+                                padding-left:7px;
+                                margin-left:unset;
+                                opacity: 1;
+                            }
+
+                        }
+                    }
+                }
+            }
+            .container-prev-next{
+                position: absolute;
+                bottom:0;
+                left:0;
+                right:0;
+                top:84%;
+                display: flex;
+                justify-content: end;
+                button{
+                    position: unset;
+                    height: 6.5vh;
+                    width: 6.5vh;
+                    padding: 0;
+                    color: #fff;
+                    text-align: center;
+                    background-color:white;
+                    border-radius:50px;
+                    opacity: 1;
+                    z-index: 2;
+                    margin-left:5px;
+                    i{
+                        color:black;
+                        opacity: 1;
+                        font-size: 25px;
+                    }
+                    &:hover{
+                        i{
+                            color:$m-color1;
+                        }
+                    }
+                    
+                }
+                .carousel-control-prev{
+                    display: flex;
+                    
+                }
+                .carousel-control-next{
+                    display: flex;
+                }
+
+            }
+            .carousel-indicators{
+                position: absolute;
+                right: 0;
+                top:84%;
+                left: 0;
+                z-index: 2;
+                display: flex;
+                justify-content: start;
+                padding: 0;
+                margin:auto;
+                list-style: none;
+                button{
+                    background-color: white;
+                    width:11px;
+                    height:11px;
+                    margin-left:0;
+                    margin-right:18px;
+                    padding:unset;
+                    border-radius:50%;
+                }
+            }
+
+
+        }
+    }
+}

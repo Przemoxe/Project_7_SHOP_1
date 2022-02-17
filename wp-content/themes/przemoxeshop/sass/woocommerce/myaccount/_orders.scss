@@ -1,0 +1,25 @@
+.col-my-account-content{
+    .tab-content{
+        .tab-pane{
+            .woocommerce-message{
+                .woocommerce-Button{
+                    border-radius:0;
+                    margin: 0;
+                    padding: 0 20px 0 20px;
+                    line-height: 51px;
+                    background-color: $m-color1;
+                    color:white;
+                    height:51px;
+                    vertical-align: center;
+                    font-weight: 400;
+                    font-size: 1.2rem;
+                    text-transform: uppercase;
+                    transition: .2s ease;
+                    &:hover{
+                        background: #3d733d;
+                    }
+                }
+            }
+        }
+    }
+}

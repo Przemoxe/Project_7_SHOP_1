@@ -1,0 +1,114 @@
+.collection{
+    background-color: #3B416B;
+    padding-top:100px;
+    padding-bottom:100px;
+    .container{
+        .row{
+            div{
+                h2{
+                    color: #fff;
+                    font-size: 2.5rem;
+                    font-weight: 400;
+                    line-height: 1.25;
+                }
+                p{
+                    color: rgba(255, 255, 255, 0.5);
+                    line-height: 1.8;
+                    font-family: "Open Sans", sans-serif;
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+            }
+        }
+        .collection-images{
+            .collection-images-height{
+                height:565px;
+            }
+        }
+        @media screen and (max-width: 1200px) {
+            .collection-images{
+                .collection-images-height{
+                    max-height:690px;
+                }
+            }
+        }
+    }
+}
+
+//////////btn///////
+.collection-image{
+    height:100%;
+    width:100%; 
+    background-position: center; 
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+}
+.collection-image-small{
+    height:100%;
+    width:100%; 
+    background-position: center; 
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+}
+.btn-container{
+    position:absolute;
+    display: flex;
+    bottom:0;
+    .collections-btn{
+        padding: 14px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: white;
+        margin-left: 3vh;
+        margin-bottom: 3vh;
+        text-transform: uppercase;
+        letter-spacing: .05rem;
+        cursor: pointer;
+        height: unset;
+        color:black;
+ 
+        .bi{
+            height:100%;
+            padding-top:14px;
+            padding-bottom:14px;
+            padding-left:15px;
+            margin-right:-10px;
+            margin-left:-20px;
+            opacity:0;
+            transition: all .2s ease;
+            color:black;
+        }
+    }
+
+}
+
+
+/////zooom/////
+.collection-image-link{
+    overflow: hidden;
+    .collection-image-zoom{
+        transition: all .2s ease;
+        -webkit-transform: scale(1.08);
+        transform: scale(1.08);
+    }
+    
+}
+
+.collection-image-link:hover{
+    overflow: hidden;
+    .collection-image-zoom{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    .collections-btn{
+        .bi{
+            opacity: 1;
+            display: inline;
+            margin-left:0px;
+        }
+    }
+}

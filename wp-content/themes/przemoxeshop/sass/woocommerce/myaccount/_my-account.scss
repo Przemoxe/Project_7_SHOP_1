@@ -1,0 +1,47 @@
+.container-my-account{
+    .row{
+        .col-my-account-content{
+            .tab-content{
+                .tab-pane{
+                    .edit-account{
+                        h3{
+                            font-size: 1.75rem;
+                            font-weight: 400;
+                            line-height: 1.2;
+                        }
+                        p{
+                            input{
+                                line-height: 1.5;
+                                padding-top:.8rem;
+                                padding-bottom:.8rem;
+                                padding-left:1rem;
+                                &:focus{
+                                    border: 1px solid $m-color1;
+                                }
+                            }
+                            button{
+                                padding-top:1.1rem;
+                                padding-bottom:1.1rem;
+                                border-radius:0;
+                                background-color: $m-color1;
+                                color:white;
+                                padding-left:2rem;
+                                padding-right:2rem;    
+                                text-transform: uppercase;
+                                letter-spacing: .05rem;
+                                display: inline-block;
+                                font-weight: 400;
+                                transition: .2s ease;
+                                &:hover{
+                                    background: #3d733d;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

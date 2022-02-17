@@ -1,0 +1,78 @@
+.container-background-my-account {
+    background-color: #3B416B;
+    height:30vh;
+    position: absolute;
+    width:100%;
+    top:0;
+    left:0;
+    .container{
+        .row{
+            padding-bottom: 5vh;
+            .col-user{
+                h1{
+                    font-size: 3.125rem;
+                    font-family: "Muli", sans-serif;
+                    font-weight: 200;
+                    line-height: 1.25;
+                    margin:0;
+                }
+            }
+            .col-logout{
+                a{
+                    height:40px;
+                    width:103px;
+                    line-height: 40px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-weight: 400;
+                    background-color: transparent;
+                    border: 1px solid white;
+                    font-size: 0.75rem;
+                    color:white;
+                    transition: .2s ease;
+                    &:hover{
+                        color: #3B416B;
+                        background-color: white;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+
+.container-my-account{
+    padding-top:30vh;
+    .row{
+        .col-nav{
+            .nav{
+                button{
+                    padding: 1em 1em 1em 1em ;
+                    text-align: left;
+                    }
+                .nav-link{
+                    background: rgba(0, 0, 0, 0.089);
+                    color: #6c757d;
+                    font-weight: 400;
+                    font-size: 1.2rem;
+                    line-height: 1.25rem;
+                    border-radius:0;
+                    border: 1px solid transparent;
+                }
+                .nav-link:hover{
+                    color:black;
+                }
+                .nav-link.active{
+                    background: rgba(0, 0, 0, 0.089);
+                    border: 1px solid black;
+                    color:black;
+                }
+            }
+        }
+    }
+}
+
+

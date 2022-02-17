@@ -1,0 +1,95 @@
+.blog-recentlies{
+    padding-top:100px;
+    .container{
+        .row-blog-recentlies{
+            margin-left:-1rem;
+            margin-right:-1rem;
+        }
+        .row{
+            .col-btn-view-all{
+                a{
+                    text-transform: uppercase;
+                    color: #4F944F;
+                    text-decoration: none;
+                    div{
+                        width:101px;
+                        .view-icon{
+                            width:30px;
+                            i{
+                                margin-left:5px;
+                                transition: .2s ease;
+                            }
+                        }
+                    }
+                }
+                a:hover{
+                    div{
+                        .view-icon{
+                            i{
+                                margin-left:14px;
+                            }
+                        }
+                    }
+                }
+
+            }
+            h1{
+                font-size: 2.5rem;
+                font-family: "Muli", sans-serif;
+                font-weight: 400;
+                line-height: 1.25;
+            }
+            .col-blog-recently{
+                a{
+                    height: 205px;
+                    text-decoration: none;
+                    .blog-recently-image{
+                        height: 205px;
+                        position: relative;
+                        img{
+                            height: 100%;
+                            width:100%;
+                            object-fit: cover;
+                        }
+                        .blog-recently-overlay{
+                            position: absolute;
+                            top:0;
+                            bottom:0;
+                            width:100%;
+                            transition: .2s linear;
+                            &:hover{
+                                background-color: rgba(0, 0, 0, 0.37);
+                            }
+                        }
+                    }
+                    .blog-recently-date{
+                        padding-top:5px;
+                        span{
+                            font-size: 0.75rem;
+                            font-family: "Muli", sans-serif;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            letter-spacing: .1em;
+                            color: #6c757d !important;
+                            line-height: 2rem;
+                            
+                        }
+                        h5{
+                            font-size: 1.25rem;
+                            line-height: 1.25em;
+                            color: #000;
+                            font-family: "Muli", sans-serif;
+                            font-weight: 400;
+                            transition: all 0.2s;
+                            display: table;
+                            &:hover{
+                                color: #4F944F;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

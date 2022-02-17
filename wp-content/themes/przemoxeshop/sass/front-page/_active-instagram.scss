@@ -1,0 +1,119 @@
+.active-instagram{
+    overflow: hidden;
+    .container{
+        padding-bottom:5px;
+        .row{
+            margin-left:-5px;
+            width: calc(100% + 10px);
+            .carousel-over-item{
+                z-index: 200;
+                padding:5px;
+                padding-left: 5px;
+                padding-right: 4px;
+                .over-item{
+                    height:100%;
+                    width:100%;
+                    background-color: #4F944F;
+                    z-index: 200;
+                    padding:40px;
+                    .item{
+                        height:100%;
+                        width:100%;
+                        color:white;
+                        .item-icon{
+                            i{
+                                font-size:28px;
+                                
+                            }
+                        }
+                        .item-text{
+                            h2{
+                                font-size: 1.875rem;
+                                line-height: 1.4em;
+                                font-weight: 400;
+                                a{
+                                    color:white;
+                                    text-decoration:none;
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                    
+                }
+            }
+            .carousel-container{
+                z-index: 1;
+                .owl-carousel{
+                    cursor: pointer;
+                    height:100%;
+                    position: relative;
+                    .owl-nav{
+                        position: absolute;
+                        width:130px;
+                        bottom:0;
+                        right:0;
+                        padding-left:5px;
+                        padding-right:5px;
+                        padding-bottom: 5px;
+                        display: flex;
+                        justify-content: end;
+                        button{
+                            width:60px;
+                            height:60px;
+                            background: #4F944F;
+                            position: relative;
+                            &:hover{
+                                background: #3d733d;
+                            }
+                            span{
+                                display: block;
+                                font-size:40px;
+                                position: absolute;
+                                top:-4px;
+                                bottom:25%;
+                                right:0;
+                                left:0;
+                                color:white;
+                            }
+                        }	
+                    }
+                    .owl-stage-outer{
+                        overflow: visible;
+
+                        .owl-stage{
+                            .owl-item{
+                                .item{
+                                    height:40vh;
+                                    padding: 5px;
+                                    .item-container-img{
+                                        height:100%;
+                                        background: red;
+                                        position: relative;
+                                        .item-overlay{
+                                            width:100%;
+                                            top:0;
+                                            bottom: 0;
+                                            position: absolute;
+                                            z-index:2;
+                                            transition: .2s linear;
+                                            &:hover{
+                                                background-color: rgba(0, 0, 0, 0.37);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .owl-dots{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
